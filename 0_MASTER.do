@@ -14,7 +14,7 @@ clear all
 version 19.5
 set more off
 
-global projectfolder "C:\Users\alannah.rudkin\OneDrive - Murdoch Children's Research Institute\Other\Contracts and PD\PD\Stata 2026\Analysis"
+global projectfolder "C:\yourfilepath\Stata 2026\Analysis"
 global output "$projectfolder\outputs"
 
 
@@ -46,6 +46,7 @@ do "$projectfolder\an_dsmc_tables_jan26_closed.do"
 
 ** make report
 do "$projectfolder\an_dsmc_report_jan26_closed.do"
+
 
 
 
