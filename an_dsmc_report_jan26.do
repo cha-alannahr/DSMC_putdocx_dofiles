@@ -49,7 +49,7 @@ capture putdocx clear
 putdocx begin, pagenum() header(header1) footer(footer1) font("Calibri", 12, black )
 
 putdocx paragraph, toheader(header1)
-putdocx image ("C:\Users\alannah.rudkin\OneDrive - Murdoch Children's Research Institute\Other\Contracts and PD\PD\Stata 2026\Picture1.png"), linebreak
+putdocx image ("C:\yourfilepath\Stata 2026\Picture1.png"), linebreak
 putdocx text ("Confidential"), underline(single)
 
 putdocx paragraph, tofooter(footer1) halign(center)
@@ -253,5 +253,6 @@ putdocx describe
 ** Save report 
 * Save document	
 putdocx save "TEST_OPEN_report_$today.docx", replace
+
 
 
